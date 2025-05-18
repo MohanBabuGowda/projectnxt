@@ -1,0 +1,128 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+/* Expense Form */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.expense-form input,
+.expense-form select,
+.expense-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.expense-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expense-form button:hover {
+  background-color: #45a049;
+}
+
+/* Expense List */
+.expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e7f5fe;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #2196F3;
+  border-radius: 4px;
+}
+
+.expense-card .details {
+  flex: 1;
+}
+
+.expense-card .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.expense-card .actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2196F3;
+  font-size: 16px;
+}
+
+.expense-card .actions button:hover {
+  color: #0b7dda;
+}
+
+/* Expense Summary */
+.expense-summary {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.expense-summary h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.expense-summary .summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .expense-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expense-card .actions {
+    margin-top: 10px;
+  }
+}
